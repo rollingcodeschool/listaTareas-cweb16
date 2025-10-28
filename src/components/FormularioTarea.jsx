@@ -28,7 +28,7 @@ const handleSubmit = (e)=>{
           <Form.Text className="text-danger">Aqui muestro un error</Form.Text>
         </Form.Group>
       </Form>
-      <ListaTareas></ListaTareas>
+      <ListaTareas arrayTareas={arrayTareas}></ListaTareas>
     </section>
   );
 };
