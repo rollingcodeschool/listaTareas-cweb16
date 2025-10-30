@@ -4,7 +4,8 @@ import ListaTareas from "./ListaTareas";
 import { useEffect, useState } from "react";
 
 const FormularioTarea = () => {
-const [arrayTareas, setArrayTareas] = useState([])
+const tareasLocalstorage = JSON.parse(localStorage.getItem('listaTareas')) || []
+const [arrayTareas, setArrayTareas] = useState(tareasLocalstorage)
 const [tarea, setTarea] = useState('')
 
 useEffect(()=>{
