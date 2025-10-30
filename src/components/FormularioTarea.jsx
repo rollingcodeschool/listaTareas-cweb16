@@ -9,8 +9,14 @@ const [tarea, setTarea] = useState('')
 
 const handleSubmit = (e)=>{
     e.preventDefault();
+    //verificar que la tarea no este repetida
+    const tareaBuscada = arrayTareas.find((itemTarea)=> itemTarea.toLowerCase() === tarea.toLowerCase().trim())
+    console.log(tareaBuscada)
+    if(tareaBuscada){
+      return alert('Ya existe una tarea con ese nombre')
+    }
     //tomar el valor del state tarea y almacenarlo en el arrayTareas
-    setArrayTareas([...arrayTareas, tarea])
+    setArrayTareas([...arrayTareas, tarea.trim()])
     //limpiar el state tarea
     setTarea('')
 }
@@ -25,7 +31,6 @@ const handleSubmit = (e)=>{
               Enviar
             </Button>
           </div>
-          <Form.Text className="text-danger">Aqui muestro un error</Form.Text>
         </Form.Group>
       </Form>
       <ListaTareas arrayTareas={arrayTareas}></ListaTareas>
