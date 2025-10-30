@@ -1,16 +1,42 @@
-# React + Vite
+# Lista de Tareas - React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto simple de una aplicación de lista de tareas (To-Do list) creada con React. Permite a los usuarios agregar, visualizar y gestionar sus tareas pendientes.
 
-Currently, two official plugins are available:
+## Características ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Agregar tareas**: Un formulario simple para ingresar y agregar nuevas tareas a la lista.
+*   **Visualizar tareas**: Las tareas agregadas se muestran en una lista clara y ordenada.
+*   **Borrar tareas**: Funcionalidad para eliminar tareas individuales de la lista.
+*   **Persistencia de datos**: Las tareas se guardan en el `localStorage` del navegador para que no se pierdan al recargar la página.
 
-## React Compiler
+## Tecnologías Utilizadas 🛠️
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   React
+*   React-Bootstrap
+*   Vite
 
-## Expanding the ESLint configuration
+## Cómo ejecutar el proyecto localmente 🚀
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Sigue estos pasos para tener una copia del proyecto corriendo en tu máquina.
+
+1.  **Clona el repositorio**
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    cd 13-listaTareas
+    ```
+
+2.  **Instala las dependencias**
+    Asegúrate de tener Node.js instalado. Luego, ejecuta el siguiente comando en la raíz del proyecto:
+    ```bash
+    npm install
+    ```
+
+3.  **Inicia el servidor de desarrollo**
+    ```bash
+    npm run dev
+    ```
+    Abre http://localhost:5173 (o el puerto que indique la terminal) en tu navegador para ver la aplicación.
+
+## Autora ✒️
+
+*   **[Tu Nombre]** - Tu GitHub/LinkedIn/Portfolio
