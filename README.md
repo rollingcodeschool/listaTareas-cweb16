@@ -21,8 +21,8 @@ Sigue estos pasos para tener una copia del proyecto corriendo en tu máquina.
 
 1.  **Clona el repositorio**
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    cd 13-listaTareas
+    git clone https://github.com/rollingcodeschool/listaTareas-cweb16.git
+    cd listaTareas-cweb16
     ```
 
 2.  **Instala las dependencias**
@@ -39,4 +39,4 @@ Sigue estos pasos para tener una copia del proyecto corriendo en tu máquina.
 
 ## Autora ✒️
 
-*   **[Tu Nombre]** - Tu GitHub/LinkedIn/Portfolio
+*  Arias Emilse
