@@ -21,6 +21,12 @@ const handleSubmit = (e)=>{
     setTarea('')
 }
 
+const borrarTarea = (nombreTarea)=>{
+const arrayFiltrado = arrayTareas.filter((itemTarea)=> itemTarea !== nombreTarea)
+//actualizar estado
+setArrayTareas(arrayFiltrado)
+}
+
   return (
     <section>
       <Form onSubmit={handleSubmit}>
@@ -33,7 +39,7 @@ const handleSubmit = (e)=>{
           </div>
         </Form.Group>
       </Form>
-      <ListaTareas arrayTareas={arrayTareas}></ListaTareas>
+      <ListaTareas arrayTareas={arrayTareas} borrarTarea={borrarTarea}></ListaTareas>
     </section>
   );
 };
